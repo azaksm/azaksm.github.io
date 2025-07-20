@@ -189,6 +189,7 @@ keep_files:
   - .nojekyll
 
 # Plug-ins
+safe: false
 plugins:
   - jekyll-archives-v2
   - jekyll-email-protect
