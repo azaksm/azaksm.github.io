@@ -643,3 +643,6 @@ toc:
   list_class: toc-list
   no_toc_class: no_toc
   title: "On this page"
+
+kramdown:
+  toc_levels: 1..6 
