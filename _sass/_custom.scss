@@ -1,0 +1,210 @@
+body {
+  font-size: 1rem;            /* 16px */
+  line-height: 1.7;
+  color: var(--global-text-color);
+  font-family: system-ui;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+h1{
+  color: var(--global-theme-color);
+  // font-size: 2rem;
+}
+h2{
+  color: var(--global-theme-color);
+  font-size: 1.75rem;
+}
+h3{
+  color: var(--global-theme-color3);
+  font-size: 1.1rem;
+}
+p{
+  margin-bottom: 1.1em;
+}
+
+.text-content h2{
+  margin-bottom: 0.75em;
+}
+
+
+code, pre {
+  font-family:  monospace;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  // letter-spacing: normal;
+}
+
+// 
+.header-bar {
+  padding: 1rem 1rem;
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin: 0;                   // remove default margins
+    padding: 0;
+    white-space: nowrap;
+    font-style: bold;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+[role="main"].container {
+  margin-top: 0 !important;
+  padding-top: 1rem;
+}
+
+
+
+// 2) Featured cards: tighter grid, smaller cards
+.container.featured-posts .row.row-cols-2 {
+  gap: 0.5rem;                // less spacing between cards
+  justify-content: center;
+}
+
+.container.featured-posts .col {
+  flex: 0 1 calc(45% - 0.5rem); // two cards per row, narrower
+  max-width: calc(45% - 0.5rem);
+  margin-bottom: 0;
+}
+
+// 3) Card internals: less padding & smaller type
+.container.featured-posts .card-body {
+  padding: 0.5rem 0.75rem;     // tighter inside
+}
+
+.card-title {
+  font-size: 1rem;             // ~16px titles
+  margin-bottom: 0.5;
+}
+
+.card-text {
+  font-size: 0.75rem;          // ~12px descriptions
+  margin-bottom: 0.25rem;
+}
+
+.post-meta {
+  font-size: 0.65rem;          // ~10px metadata
+  line-height: 1.2;
+}
+
+// 4) Responsive stack for phones, with even smaller cards
+// 
+
+// About
+.post-header .desc {
+  font-weight: bold;
+  color: var(--global-theme-color1);
+}
+
+.post-header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tag-category-list {
+  border-bottom: 1px solid var(--global-divider-color);
+  text-align: center;
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+  ul {
+    justify-content: center;
+    display: flow-root;
+
+    p,
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0rem 0rem;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+.post-title {
+  mjx-container[jax="CHTML"][display="true"] {
+    display: unset;
+  }
+}
+
+.post-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid var(--global-divider-color);
+    list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .post-meta {
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+
+    .post-tags {
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0;
+    }
+
+    a {
+      color: var(--global-theme-color4);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-hover-color);
+      }
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: unset;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.1rem; }
+  .container.featured-posts .col {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+  .container.featured-posts .card-body {
+    padding: 0.4rem 0.6rem;
+  }
+  .card-title { font-size: 0.9rem; }
+  .card-text  { font-size: 0.7rem; }
+  .post-meta  { font-size: 0.3rem; }
+  .post-tags  { font-size: 0.3rem; }
+  
+}
+
+@media (max-width: 576px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    visibility: hidden;
+    height: 0;
+    top: 0;
+  }
+}
+
+.news .table th {
+  text-align: right;
+  vertical-align: middle;         /* center vertically */
+  padding-right: 0.5rem;          /* space before title */
+  font-size: 0.8rem;              /* your chosen size */
+}
+
+.news .table td {
+  text-align: left;
+  vertical-align: middle;         /* center vertically */
+  padding-left: 0.5rem;           /* space after date */
+}
