@@ -634,3 +634,12 @@ jsonresume:
   - languages
   - interests
   - references
+
+
+toc:
+  min_level: 1
+  max_level: 6
+
+  list_class: toc-list
+  no_toc_class: no_toc
+  title: "On this page"
