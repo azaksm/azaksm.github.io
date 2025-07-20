@@ -1,1 +1,1 @@
-Sitemap: https://.github.io/sitemap.xml
+Sitemap: https://azaksm.github.io/sitemap.xml
