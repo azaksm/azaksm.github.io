@@ -4,6 +4,7 @@ title: Предисловие
 date: 2025-07-20
 description: Вводный пост
 featured: true
+tags: general
 ---
 
 ## Хей, это вводный пост к этому блогу.
