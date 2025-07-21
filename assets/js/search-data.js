@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-конференция-в-лиссабоне",
+        },{id: "post-философия",
+        
+          title: "Философия",
+        
+        description: "Характеризация",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/philosophy/";
+          
+        },
+      },{id: "post-конференция-в-лиссабоне",
         
           title: "Конференция в Лиссабоне",
         
