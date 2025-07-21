@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction
+title: Предисловие
 date: 2025-07-20
 description: Вводный пост
 featured: true
