@@ -36,6 +36,13 @@ blockquote{
   }
 }
 
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-inline-start: 1rem;
+}
+
 code,
 pre {
   font-family: monospace;
@@ -228,8 +235,6 @@ pre {
     text-align: left;
     vertical-align: middle;
     padding-left: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
-
-

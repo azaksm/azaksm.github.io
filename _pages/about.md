@@ -19,7 +19,7 @@ announcements:
   limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -32,8 +32,7 @@ latest_posts:
 В последствии, это станет академическим персональным веб-сайтом. По пути, буду рад любым рекомендациям по поводу улучшения дизайна или набора фитч сайта.
 
 **To appear:**
-- Физика, определение
-- История познания о природе света
+- История познания природы света
 - Законы Кеплера
 - Фурье Анализ
 - Эстетика
