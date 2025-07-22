@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-философия",
+        },{id: "post-русский-язык",
+        
+          title: "Русский Язык",
+        
+        description: "Проблема",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/russian-lang/";
+          
+        },
+      },{id: "post-философия",
         
           title: "Философия",
         
