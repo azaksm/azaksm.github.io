@@ -235,14 +235,14 @@ pre {
 }
 
 .between-separator {
-  border: 0;
-  height: 1px;
-  background-color: var(--global-footer-bg-color);
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.1rem;
+  // background-color: var(--global-divider-color);
 }
 
 .inside-separator {
-  border: 0;
-  height: 0.5px;
+  height: 0.6px;
   background-color: var(--global-divider-color);
   margin: 0.1rem 0;
 }

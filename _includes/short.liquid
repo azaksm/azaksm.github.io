@@ -1,0 +1,30 @@
+<div class="short">
+  {% if site.short != blank %}
+    {% assign shorts = site.short | reverse %}
+    {% for item in shorts %}
+      <div class="short-item">
+        <small class="short-date d-block">
+          {{ item.date | date: "%d/%m/%y" }}
+        </small>
+
+        <!-- inside: between date and content -->
+        <hr class="inside-separator">
+
+        <div class="short-content">
+          {% if item.inline %}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {% else %}
+            {{ item.content }}
+          {% endif %}
+        </div>
+
+        <!-- between: after content, but still inside the same padded box -->
+        {% unless forloop.last %}
+          <hr class="between-separator">
+        {% endunless %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No short so far…</p>
+  {% endif %}
+</div>
