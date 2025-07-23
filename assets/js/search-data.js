@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-news",
-          title: "news",
+  },{id: "nav-short",
+          title: "short",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/news/";
+            window.location.href = "/short/";
           },
         },{id: "nav-blog",
           title: "blog",
@@ -83,10 +83,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-день-рождения-сайта",
+            },},{id: "short-день-рождения-сайта",
           title: 'День рождения сайта!',
           description: "",
-          section: "News",},{id: "news-у-меня-есть-несколько-старых-блог-постов-буду-их-компилировать-склеивать-дорабатывать-и-скидывать-сюда-потом-буду-выкладывать-что-нибудь-новое",
+          section: "Short",},{id: "short-у-меня-есть-несколько-старых-блог-постов-буду-их-компилировать-склеивать-дорабатывать-и-скидывать-сюда-потом-буду-выкладывать-что-нибудь-новое",
           title: 'У меня есть несколько старых блог постов, буду их компилировать, склеивать, дорабатывать и...',
           description: "",
-          section: "News",},];
+          section: "Short",},{id: "short-теперь-тут-будут-короткие-посты-как-в-твиттере",
+          title: 'Теперь тут будут короткие посты как в Твиттере!',
+          description: "",
+          section: "Short",},];
