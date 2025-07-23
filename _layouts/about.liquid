@@ -40,12 +40,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
+    <!-- short -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/short/' | relative_url }}" style="color: inherit">short</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include short.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
@@ -71,10 +71,6 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
     {% endif %}
   </article>
 </div>

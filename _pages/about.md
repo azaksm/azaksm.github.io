@@ -19,7 +19,7 @@ announcements:
   limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -30,10 +30,3 @@ latest_posts:
 Буду писать о математике, науке, дружбе и всякой всячине. Позже, буду добавлять академические материалы, рассказывать о некоторых работах, а также добавлю галлерею фотографий.
 
 В последствии, это станет академическим персональным веб-сайтом. По пути, буду рад любым рекомендациям по поводу улучшения дизайна или набора фитч сайта.
-
-**To appear:**
-- История познания природы света
-- Законы Кеплера
-- Фурье Анализ
-- Эстетика
-- Мои любимые вселенные – Portal
