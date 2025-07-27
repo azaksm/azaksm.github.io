@@ -40,12 +40,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- short -->
+    <!-- shorts -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/short/' | relative_url }}" style="color: inherit">short</a>
+        <a href="{{ '/shorts/' | relative_url }}" style="color: inherit">shorts</a>
       </h2>
-      {% include short.liquid limit=true %}
+      {% include shorts.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->

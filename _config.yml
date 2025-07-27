@@ -108,8 +108,8 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+disqus_shortsname: al-folio # put your disqus shortsname
+# https://help.disqus.com/en/articles/1717111-what-s-a-shortsname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
@@ -138,7 +138,7 @@ newsletter:
 collections:
   books:
     output: false
-  short:
+  shorts:
     defaults:
       layout: post
     output: false

@@ -1,16 +1,16 @@
-<div class="short">
-  {% if site.short != blank %}
-    {% assign shorts = site.short | reverse %}
-    {% for item in shorts %}
-      <div class="short-item">
-        <small class="short-date d-block">
+<div class="shorts">
+  {% if site.shorts != blank %}
+    {% assign shortss = site.shorts | reverse %}
+    {% for item in shortss %}
+      <div class="shorts-item">
+        <small class="shorts-date d-block">
           {{ item.date | date: "%d/%m/%y" }}
         </small>
 
         <!-- inside: between date and content -->
         <hr class="inside-separator">
 
-        <div class="short-content">
+        <div class="shorts-content">
           {% if item.inline %}
             {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
           {% else %}
@@ -25,6 +25,6 @@
       </div>
     {% endfor %}
   {% else %}
-    <p>No short so far…</p>
+    <p>No shorts so far…</p>
   {% endif %}
 </div>
