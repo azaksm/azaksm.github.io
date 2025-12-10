@@ -1,0 +1,62 @@
+/*******************************************************************************
+ * color variables overridden with Boreas scheme
+ ******************************************************************************/
+
+@use "sass:color";
+
+// Base text/neutral
+$white-color: #fefefe !default;        // Boreas background
+$black-color: #4c566a !default;        // Boreas foreground (text)
+
+// Gris (grays)
+$grey-color: #848991 !default;         // same as text
+$grey-color-light: #adb5b6 !default;   // color.adjust($grey-color, $lightness: 40%)
+$grey-color-dark: #565665 !default;    // from Boreas rules
+$grey-900: #2e3440 !default;           // Nord polar‑night (deep charcoal)
+
+// Reds & warnings
+$red-color: #bf616a !default;          // Boreas “error”
+$red-color-dark: #a2525a !default;     // darkened by ~15%
+
+$orange-color: #d08770 !default;       // Nord orange (not in Boreas, but complementary)
+$orange-color-dark: #b06a58 !default;  // darkened ~15%
+
+$yellow-color: #ebcb8b !default;       // Boreas “warning” (golden)
+
+// Greens
+$green-color: #a3be8c !default;        // Boreas “success”
+$green-color-dark: #8aa177 !default;   // darkened ~15%
+$green-color-light: color.adjust($green-color, $lightness: 40%) !default;
+$green-color-bright: #11d68b !default; // original bright‑green left unchanged
+
+// Blues & cyans
+$blue-color: #5e81ac !default;         // Boreas muted blue (#5e81ac)
+$blue-color-dark: #4b6985 !default;    // darkened ~15%
+
+$cyan-color: #81a1c1 !default;         // Boreas “info” (light‑blue)
+$light-cyan-color: color.adjust($cyan-color, $lightness: 25%) !default;
+
+// Purples & pinks
+$purple-color: #b48ead !default;       // Nord purple
+$light-purple-color: color.adjust($purple-color, $lightness: 25%) !default;
+
+$pink-color: #bf616a !default;         // fallback to red (Boreas has no distinct pink)
+$pink-color-light: #ffdddd !default;   // keep the original light‑pink
+
+// Code background
+$code-bg-color-light: #eceff4 !default;  // Boreas “lineHighlight”
+$code-bg-color-dark: #2c3237 !default;   // leave as original dark‑mode value
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Tabler icons location
+$ti-font-path: "../fonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
