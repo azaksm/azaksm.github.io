@@ -34,17 +34,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/physics/";
           
         },
-      },{id: "post-русский-язык",
-        
-          title: "Русский Язык",
-        
-        description: "Проблема",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/russian-lang/";
-          
-        },
       },{id: "post-философия",
         
           title: "Философия",
@@ -54,28 +43,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/philosophy/";
-          
-        },
-      },{id: "post-конференция-в-лиссабоне",
-        
-          title: "Конференция в Лиссабоне",
-        
-        description: "Ноябрь",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/conference/";
-          
-        },
-      },{id: "post-предисловие",
-        
-          title: "Предисловие",
-        
-        description: "Вводный пост",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/introduction/";
           
         },
       },{id: "books-the-godfather",
